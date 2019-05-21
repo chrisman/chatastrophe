@@ -40,3 +40,23 @@ search shows that it still seems to be popular, so that's what I'm going with.
 - Reach goal: use the `/` endpoint to allow the user to enter a nickname that
   will be broadcast along with the message when chatting. Probably save to
   localstorage. Absence of nick will redirect a user to the "registration page"
+
+## Nicknames
+
+This got kind of silly, but got nicknames on the chat screen, and it passed
+data from local storage to the socket, and to the other connections, which is
+really all I wanted to accomplish here.
+
+Issues:
+
+- no check for name collision (no server side anything)
+
+## Roadmap
+
+- looks: retrofit a CSS framework?
+- nickname collision: you can keep a list of nicks in memory on the server as
+  people emit messages? and remove them on disconnect. that way you can detect
+  collisions without keeping a database of registered users
+- modularize: you could make a localstorage service, and maybe a socket service?
+- test: ...and then test those services.
+- better routing? directly modifying the location.href attr seems yucky
