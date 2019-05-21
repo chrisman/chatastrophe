@@ -2,6 +2,8 @@
 
 > a simple websockets webchat example
 
+![gif of two browsers chatting with each other](chat.gif)
+
 ## About
 
 A very simple messenger web app that allows muiltiple users to send short text
