@@ -1,13 +1,12 @@
 extends layout
 
 block content
-  script(src="javascripts/socket.io.js")
-  script.
-    const socket = io();
   header
     h1 chatastrophe
   article
     ul#messages
     form(action='')
-      input#message
+      input#message(autocomplete="off")
       button Send
+  script(src="javascripts/socket.io.js")
+  script(src="javascripts/chat.js")
