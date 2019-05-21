@@ -1,6 +1,9 @@
 extends layout
 
 block content
+  script(src="javascripts/socket.io.js")
+  script.
+    const socket = io();
   header
     h1 chatastrophe
   article
