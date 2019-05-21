@@ -15,6 +15,10 @@ Visit `/chat` to chat anonymously.
 
 Decision log at `/docs/decisions.md`
 
+## Demo
+
+See it live: <https://chatastrophe.herokuapp.com/>
+
 ## How to run
 
 1. clone this repo
