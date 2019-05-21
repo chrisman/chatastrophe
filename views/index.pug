@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1 chatastrophe
+  article
+    form#register-form(action='')
+      label(for="nick") Register a nickname:
+      input#nick(autocomplete="off", name="nick")
+      button Send
+  script(type="text/javascript", src="javascripts/nick.js")
+

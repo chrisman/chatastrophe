@@ -1,15 +1,15 @@
-form {
+form#message-form {
   background-color: tomato;
   padding: 1rem 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex; }
-  form input {
+  form#message-form input {
     border: 0px;
     padding: 1rem;
     flex-grow: 1; }
-  form button {
+  form#message-form button {
     background-color: #00FFCC;
     border: none;
     padding: 1rem;
@@ -29,6 +29,25 @@ ul {
     padding-left: 0.5em; }
   ul li:nth-child(even) {
     background-color: #ccc; }
+  ul li span {
+    font-weight: bolder; }
+
+form#register-form {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 1em;
+  width: max-content;
+  margin: 0 auto; }
+  form#register-form > * {
+    margin: 1em 0; }
+  form#register-form button {
+    background-color: #00FFCC;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    align-self: flex-end; }
 
 body {
   margin: 0px;
