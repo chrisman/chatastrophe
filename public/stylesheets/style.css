@@ -1,6 +1,39 @@
+form {
+  background-color: tomato;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex; }
+  form input {
+    border: 0px;
+    padding: 1rem;
+    flex-grow: 1; }
+  form button {
+    background-color: #00FFCC;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px; }
+
+header h1 {
+  margin: 0px;
+  padding: 1rem;
+  background-color: #333;
+  color: #eee; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    padding-left: 0.5em; }
+  ul li:nth-child(even) {
+    background-color: #ccc; }
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  margin: 0px;
+  padding: 0px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
